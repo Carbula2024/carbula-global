@@ -125,12 +125,10 @@ const Home = ({ zonas, referer, COUNTRY_CODE }) => {
       <animated.div style={titleProps}>
         <Jumbotron title={title} subtitle={subtitle} />
       </animated.div>
-      <div style={{display:'flex', width:'100%'}}>
+      <div style={styles.widget_container}>
       <div style={{width: '100%', height: '100%'}}  id='autored-frame'></div>
       <script type="text/javascript" src="https://embeddable.autored.cl/loader.js"></script>
       </div>
-      <div style={{width: '100%', height: '100%'}}  id='autored-frame'></div>
-      <script type="text/javascript" src="https://embeddable.autored.cl/loader.js"></script>
       <section className={styles.section1__container}>
         <div className={styles.text__container}>
           <h1 className={styles.section1__title}>{t('section1Title')}</h1>
