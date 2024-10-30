@@ -92,6 +92,18 @@
   display: none;
 }
 
+.widget_container{
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.widget_container .autored-container{
+  min-width: none;
+}
+
+
 @media (max-width: 1441px) {
   .text__container {
     margin: 1em 0em 0em 100px;
