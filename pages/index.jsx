@@ -14,7 +14,6 @@ import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import webinprogress from '../components/WebInProgress';
-import WidgetCotizer from '../components/WidgetCotizer/WidgetCotizer';
 
 
 const BlackoutComponent = dynamic(import('../components/BlackoutComponent'))
@@ -126,7 +125,6 @@ const Home = ({ zonas, referer, COUNTRY_CODE }) => {
       <animated.div style={titleProps}>
         <Jumbotron title={title} subtitle={subtitle} />
       </animated.div>
-      <WidgetCotizer/>
       <section className={styles.section1__container}>
         <div className={styles.text__container}>
           <h1 className={styles.section1__title}>{t('section1Title')}</h1>
