@@ -1,4 +1,4 @@
-import styles from './widget.css'
+import styles from './widget.module.css'
 const WidgetCotizer = () => {
     return (
         <>
