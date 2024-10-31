@@ -24,6 +24,12 @@ a {
   min-width: 80% !important;;
 }
 
+.autored-tab-detail {
+  width: 70vw;
+  margin-left: 0;
+}
+
+
 @media (max-width: 576px) {
   .autored-form-field {
     width: 87% !important;
