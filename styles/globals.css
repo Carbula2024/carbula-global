@@ -16,6 +16,8 @@ a {
 }
 */
 
+
+
 /* Cotizador Autored*/
 .autored-container{
   max-width: 1000px !important;
@@ -27,6 +29,10 @@ a {
 .autored-tab-detail {
   width: 70vw !important;
   margin-left: 0 !important;
+}
+
+.autored-required-fields-info {
+  padding-left: 20px !important;
 }
 
 
