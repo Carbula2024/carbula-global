@@ -55,7 +55,6 @@ function MyApp({ Component, pageProps }) {
         });
         
         const data = await response.json();
-        console.log('Evento enviado a TikTok:', data);
       } catch (error) {
         console.error('Error al enviar el evento a TikTok:', error);
       }
