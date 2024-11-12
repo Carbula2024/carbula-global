@@ -5,6 +5,12 @@ const tiktokpixelID = 'CSC5TTJC77U3K05H6C1G';         // Reemplaza con tu Pixel 
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
+        const { url } = req.body;
+
+        if (!url) {
+          return res.status(400).json({ error: 'La URL es requerida' });
+        }
+        
         try {
             // Se agrega el código de prueba a la solicitud
             const response = await fetch('https://business-api.tiktok.com/open_api/v1.2/pixel/track/', {
