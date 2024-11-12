@@ -1,7 +1,6 @@
-import axios from 'axios';
 
-const TIKTOK_ACCESS_TOKEN = '96178e17fef8d3245a1af7ace0a97cc8bc4f1d0d'; // Reemplaza con tu Access Token
-const tiktokpixelID = 'CSC5TTJC77U3K05H6C1G';         // Reemplaza con tu Pixel ID
+const tiktokAccessToken = process.env.TIKTOK_ACCESS_TOKEN;
+const tiktokPixelId = process.env.TIKTOK_PIXEL_ID;
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
@@ -13,17 +12,19 @@ export default async function handler(req, res) {
         }
 
         try {
+          console.log(tiktokAccessToken, tiktokPixelId)
             // Se agrega el código de prueba a la solicitud
             const response = await fetch('https://business-api.tiktok.com/open_api/v1.3/pixel/track/', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
-                'Access-Token': TIKTOK_ACCESS_TOKEN,  // Tu token de acceso
+                'Access-Token': tiktokAccessToken,  // Tu token de acceso
               },
               body: JSON.stringify(
               {
-                pixel_code: tiktokpixelID,
+                pixel_code: tiktokPixelId,
                 event: "Page View",
+                test_event_code: 'TEST04972',
                 context: {
                   page: {
                     url: url,
