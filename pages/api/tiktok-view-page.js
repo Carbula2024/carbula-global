@@ -11,7 +11,6 @@ export default async function handler(req, res) {
         }
 
         try {
-          console.log(tiktokAccessToken, tiktokPixelId)
             // Se agrega el código de prueba a la solicitud
             const response = await fetch('https://business-api.tiktok.com/open_api/v1.3/pixel/track/', {
               method: 'POST',
