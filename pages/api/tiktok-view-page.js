@@ -1,46 +1,41 @@
 import axios from 'axios';
 
 const TIKTOK_ACCESS_TOKEN = '96178e17fef8d3245a1af7ace0a97cc8bc4f1d0d'; // Reemplaza con tu Access Token
-const tiktokpixelID = process.env.NEXT_PUBLIC_TIKTOK_PIXEL_ID;         // Reemplaza con tu Pixel ID
+const tiktokpixelID = 'CSC5TTJC77U3K05H6C1G';         // Reemplaza con tu Pixel ID
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
-      try {
-        const event = {
-          pixel_code: tiktokpixelID,
-          event: "ViewPage",
-          timestamp: Math.floor(Date.now() / 1000),
-          context: {
-            user: {
-              external_id: req.body.userId || "user123",
-            },
-            page: {
-              url: req.body.url || "https://example.com/page",
+        try {
+            // Se agrega el código de prueba a la solicitud
+            const response = await fetch('https://business-api.tiktok.com/open_api/v1.2/pixel/track/', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Access-Token': process.env.TIKTOK_ACCESS_TOKEN,  // Tu token de acceso
+              },
+              body: JSON.stringify({
+                pixel_code: process.env.TIKTOK_PIXEL_ID,  // Tu ID de Pixel de TikTok
+                event: 'PageView',  // El evento de tipo 'PageView'
+                properties: {
+                  url: url,  // La URL de la página actual
+                },
+                test_event_code: 'TEST04972', // El código de prueba proporcionado por TikTok
+              }),
+            });
+      
+            // Si la llamada a la API de TikTok falla
+            if (!response.ok) {
+              const errorData = await response.json();
+              throw new Error(`Error al registrar evento: ${errorData.message || 'Desconocido'}`);
             }
+      
+            const data = await response.json();
+            return res.status(200).json({ success: true, message: 'Evento de página registrado', data });
+          } catch (error) {
+            console.error('Error al procesar el evento:', error);
+            return res.status(500).json({ error: error.message || 'Error al procesar el evento' });
           }
-        };
-  
-        const response = await axios.post(
-          'https://business-api.tiktok.com/open_api/v1.3/events/track/',
-          {
-            pixel_code: TIKTOK_PIXEL_ID,
-            event: "ViewPage",
-            event_data: event,
-          },
-          {
-            headers: {
-              'Access-Token': TIKTOK_ACCESS_TOKEN,
-              'Content-Type': 'application/json',
-            },
-          }
-        );
-  
-        res.status(200).json({ success: true, data: response.data });
-      } catch (error) {
-        console.error('Error al enviar evento a TikTok:', error);
-        res.status(500).json({ success: false, error: error.message });
+        } else {
+          return res.status(405).json({ error: 'Método no permitido, solo POST' });
+        }
       }
-    } else {
-      res.status(405).json({ error: 'Método no permitido' });
-    }
-  }
