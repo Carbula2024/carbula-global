@@ -39,6 +39,31 @@ dayjs.updateLocale('es', {
 function MyApp({ Component, pageProps }) {
   const tiktokpixelID = process.env.NEXT_PUBLIC_TIKTOK_PIXEL_ID;
   useEffect(() => {
+    // Llamada al endpoint `/api/tiktok-view-page` cuando se carga una página
+    const sendPageViewEvent = async () => {
+      try {
+        const response = await fetch('/api/tiktok-view-page', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            url: window.location.href, // Captura la URL de la página actual
+          }),
+        });
+        
+        const data = await response.json();
+        console.log('Evento enviado a TikTok:', data);
+      } catch (error) {
+        console.error('Error al enviar el evento a TikTok:', error);
+      }
+    };
+
+    sendPageViewEvent(); // Llama al evento al cargar la página
+
+  }, []);
+  
+  useEffect(() => {
     // Initialize Google Tag Manager
     //TagManager.initialize({ gtmId: getGTMid(pageProps.COUNTRY_CODE) });
     {/* Google tag (gtag.js) */ }
