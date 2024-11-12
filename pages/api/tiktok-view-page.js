@@ -17,10 +17,10 @@ export default async function handler(req, res) {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
-                'Access-Token': process.env.TIKTOK_ACCESS_TOKEN,  // Tu token de acceso
+                'Access-Token': TIKTOK_ACCESS_TOKEN,  // Tu token de acceso
               },
               body: JSON.stringify({
-                pixel_code: process.env.TIKTOK_PIXEL_ID,  // Tu ID de Pixel de TikTok
+                pixel_code: tiktokpixelID,  // Tu ID de Pixel de TikTok
                 event: 'PageView',  // El evento de tipo 'PageView'
                 properties: {
                   url: url,  // La URL de la página actual
