@@ -49,6 +49,8 @@ function MyApp({ Component, pageProps }) {
           },
           body: JSON.stringify({
             url: window.location.href, // Captura la URL de la página actual
+            userAgent: navigator.userAgent,
+            referrer: document.referrer || "",
           }),
         });
         

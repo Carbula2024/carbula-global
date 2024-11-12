@@ -5,7 +5,8 @@ const tiktokpixelID = 'CSC5TTJC77U3K05H6C1G';         // Reemplaza con tu Pixel 
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
-        const { url } = req.body;
+        const { url, userAgent, referrer } = req.body;
+        console.log(url, userAgent, referrer)
 
         if (!url) {
           return res.status(400).json({ error: 'La URL es requerida' });
@@ -13,19 +14,24 @@ export default async function handler(req, res) {
 
         try {
             // Se agrega el código de prueba a la solicitud
-            const response = await fetch('https://business-api.tiktok.com/open_api/v1.2/pixel/track/', {
+            const response = await fetch('https://business-api.tiktok.com/open_api/v1.3/pixel/track/', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
                 'Access-Token': TIKTOK_ACCESS_TOKEN,  // Tu token de acceso
               },
-              body: JSON.stringify({
-                pixel_code: tiktokpixelID,  // Tu ID de Pixel de TikTok
-                event: 'PageView',  // El evento de tipo 'PageView'
-                properties: {
-                  url: url,  // La URL de la página actual
-                },
-                test_event_code: 'TEST04972', // El código de prueba proporcionado por TikTok
+              body: JSON.stringify(
+              {
+                pixel_code: tiktokpixelID,
+                event: "View Page",
+                test_event_code: "TEST04972",
+                context: {
+                  page: {
+                    url: url,
+                    referrer: referrer
+                  },
+                  user_agent: userAgent
+                }
               }),
             });
       
