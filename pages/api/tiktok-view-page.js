@@ -10,7 +10,7 @@ export default async function handler(req, res) {
         if (!url) {
           return res.status(400).json({ error: 'La URL es requerida' });
         }
-        
+
         try {
             // Se agrega el código de prueba a la solicitud
             const response = await fetch('https://business-api.tiktok.com/open_api/v1.2/pixel/track/', {
@@ -23,7 +23,7 @@ export default async function handler(req, res) {
                 pixel_code: process.env.TIKTOK_PIXEL_ID,  // Tu ID de Pixel de TikTok
                 event: 'PageView',  // El evento de tipo 'PageView'
                 properties: {
-                  url: window.location.href,  // La URL de la página actual
+                  url: url,  // La URL de la página actual
                 },
                 test_event_code: 'TEST04972', // El código de prueba proporcionado por TikTok
               }),
