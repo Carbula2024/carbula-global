@@ -17,7 +17,7 @@ export default async function handler(req, res) {
                 pixel_code: process.env.TIKTOK_PIXEL_ID,  // Tu ID de Pixel de TikTok
                 event: 'PageView',  // El evento de tipo 'PageView'
                 properties: {
-                  url: url,  // La URL de la página actual
+                  url: window.location.href,  // La URL de la página actual
                 },
                 test_event_code: 'TEST04972', // El código de prueba proporcionado por TikTok
               }),
