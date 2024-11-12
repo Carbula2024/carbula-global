@@ -24,7 +24,6 @@ export default async function handler(req, res) {
               {
                 pixel_code: tiktokPixelId,
                 event: "Page View",
-                test_event_code: 'TEST04972',
                 context: {
                   page: {
                     url: url,
