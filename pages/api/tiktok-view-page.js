@@ -21,7 +21,7 @@ export default async function handler(req, res) {
               body: JSON.stringify(
               {
                 pixel_code: tiktokPixelId,
-                event: "PageView",
+                event: "Pageview",
                 context: {
                   page: {
                     url: url,
