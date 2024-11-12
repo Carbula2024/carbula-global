@@ -5,7 +5,6 @@ const tiktokPixelId = process.env.TIKTOK_PIXEL_ID;
 export default async function handler(req, res) {
     if (req.method === 'POST') {
         const { url, userAgent, referrer } = req.body;
-        console.log(url, userAgent, referrer)
 
         if (!url) {
           return res.status(400).json({ error: 'La URL es requerida' });
