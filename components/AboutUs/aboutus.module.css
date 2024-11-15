@@ -75,6 +75,18 @@
     object-fit: cover;
 }
 
+.phone,.email{
+    display: flex;
+    gap:3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone img,.email img{
+    max-width: 20px;
+    color: #898A8A;
+}
+
 .img_container:hover{
     transform: scale(1.1);
 }
