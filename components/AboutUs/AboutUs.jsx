@@ -16,17 +16,19 @@ const AboutUs = () => {
                     </video>
                 </div>
                 <div className={styles.contact_us}>
-                    <div className={styles.img_container}>
+                    <div>
                         <img src="/images/aboutus/Daniel.png" alt="" className={styles.img_us} />
+                        <div className={styles.info_container}>
                         <p className={styles.phone}><img src="/images/aboutus/phone.svg" alt="" /><a href="">+1 234 567 890</a></p>
                         <p className={styles.email}><img src="/images/aboutus/email.svg" alt="" /><a href="">correo@carbula.com</a></p>
+                        </div>
                     </div>
-                    <div className={styles.img_container}>
+                    <div>
                         <img src="/images/aboutus/Natasha.png" alt="" className={styles.img_us} />
                         <p className={styles.phone}><img src="/images/aboutus/phone.svg" alt="" /><a href="">+1 234 567 890</a></p>
                         <p className={styles.email}><img src="/images/aboutus/email.svg" alt="" /><a href="">correo@carbula.com</a></p>
                     </div>
-                    <div className={styles.img_container}>
+                    <div>
                         <img src="/images/aboutus/Marcelo.png" alt="" className={styles.img_us} />
                         <p className={styles.phone}><img src="/images/aboutus/phone.svg" alt="" /><a href="">+1 234 567 890</a></p>
                         <p className={styles.email}><img src="/images/aboutus/email.svg" alt="" /><a href="">correo@carbula.com</a></p>

@@ -49,8 +49,8 @@
 
 .presentation_video {
     max-width: 600px;
+    min-width: 590px;
     height: auto;
-    border-radius: 15px;
 }
 
 
@@ -64,7 +64,7 @@
 }
 
 .img_container{
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .img_us {
@@ -75,10 +75,12 @@
     object-fit: cover;
 }
 
+
+
 .phone,.email{
     display: flex;
-    gap:3px;
     justify-content: center;
+    gap:3px;
     align-items: center;
 }
 
@@ -91,4 +93,13 @@
     transform: scale(1.1);
 }
 
-
+@media (min-width: 1460px) {
+    .contact_us {
+        overflow: hidden;
+    }
+    .img_container{
+        width: 100vh;
+    }
+    
+  }
+  
