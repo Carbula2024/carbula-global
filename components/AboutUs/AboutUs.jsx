@@ -4,34 +4,36 @@ const AboutUs = () => {
     return (
         <>
             <div className={styles.aboutus_container}>
-                <h3>Sobre nosotros</h3>
+                <h2>Sobre nosotros</h2>
                 <div className={styles.presentation_container}>
                     <div className={styles.presentation_text}>
                         <h3>Quienes somos</h3>
-                        <p>En Cárbula, estamos comprometidos con la compraventa de vehículos en consignación, facilitando todo el proceso desde la comodidad de tu hogar. Nuestro equipo de expertos se dedica a ofrecer un servicio transparente, seguro y eficiente, conectando a vendedores y compradores de manera confiable. Con Cárbula, puedes gestionar la venta o compra de tu vehículo sin complicaciones, aprovechando nuestra plataforma innovadora y el soporte personalizado de nuestros profesionales. ¡Conócenos y descubre cómo hacemos que la experiencia de adquirir o vender tu vehículo sea sencilla y satisfactoria!</p>
+                        <p>Hacemos que vender tu auto sea seguro y sencillo
+                        En CÁRBULA somos tu socio estratégico para vender tu auto de forma segura y eficiente. Comprendemos las dudas al vender un vehículo usado, por eso ofrecemos un proceso transparente y sin complicaciones, respaldado por un equipo profesional que se encarga de todo: desde la fotografía hasta la gestión de publicaciones y negociaciones. Nuestro objetivo es proteger tus intereses, garantizar el mejor valor posible y brindarte una experiencia positiva, con respaldo constante y profesionalismo para tu tranquilidad.</p>
                     </div>
-                    <video width="100%" controls className={styles.presentation_video}>
-                        <source src='/videos/presentacion.mp4' type="" />
+                    <video  controls className={styles.presentation_video}>
+                        <source src='/videos/presentacion.mp4' type="video/mp4" />
                         Tu navegador no soporta la etiqueta de video.
                     </video>
                 </div>
                 <div className={styles.contact_us}>
-                    <div>
-                        <img src="/images/aboutus/Daniel.png" alt="" className={styles.img_us} />
-                        <div className={styles.info_container}>
-                        <p className={styles.phone}><img src="/images/aboutus/phone.svg" alt="" /><a href="">+1 234 567 890</a></p>
-                        <p className={styles.email}><img src="/images/aboutus/email.svg" alt="" /><a href="">correo@carbula.com</a></p>
-                        </div>
+                    <div className={styles.img_container}>
+                        <img src="/images/aboutus/Daniel.png" alt="Miembro del equipo" className={styles.img_us} />
+                            <h3>Gerente comercial</h3>
+                        <p className={styles.phone}><img src="/images/aboutus/phone.svg" alt="phone" />+1 234 567 890</p>
+                        <p className={styles.email}><img src="/images/aboutus/email.svg" alt="email" />correo@carbula.com</p>
                     </div>
-                    <div>
-                        <img src="/images/aboutus/Natasha.png" alt="" className={styles.img_us} />
-                        <p className={styles.phone}><img src="/images/aboutus/phone.svg" alt="" /><a href="">+1 234 567 890</a></p>
-                        <p className={styles.email}><img src="/images/aboutus/email.svg" alt="" /><a href="">correo@carbula.com</a></p>
+                    <div className={styles.img_container}>
+                        <img src="/images/aboutus/Natasha.png" alt="Miembro del equipo" className={styles.img_us} />
+                        <h3>Gerente marketing</h3>
+                        <p className={styles.phone}><img src="/images/aboutus/phone.svg" alt="phone" />+1 234 567 890</p>
+                        <p className={styles.email}><img src="/images/aboutus/email.svg" alt="email" />correo@carbula.com</p>
                     </div>
-                    <div>
-                        <img src="/images/aboutus/Marcelo.png" alt="" className={styles.img_us} />
-                        <p className={styles.phone}><img src="/images/aboutus/phone.svg" alt="" /><a href="">+1 234 567 890</a></p>
-                        <p className={styles.email}><img src="/images/aboutus/email.svg" alt="" /><a href="">correo@carbula.com</a></p>
+                    <div className={styles.img_container}>
+                        <img src="/images/aboutus/Marcelo.png" alt="Miembro del equipo" className={styles.img_us} />
+                        <h3>Gerente operaciones</h3>
+                        <p className={styles.phone}><img src="/images/aboutus/phone.svg" alt="phone" />+1 234 567 890</p>
+                        <p className={styles.email}><img src="/images/aboutus/email.svg" alt="email" />correo@carbula.com</p>
                     </div>
                 </div>
             </div>

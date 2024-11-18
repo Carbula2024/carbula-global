@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-.aboutus_container > h3 {
+.aboutus_container>h3 {
     padding: 20px;
     color: #3074F1;
     font-size: 2.5rem;
@@ -19,7 +19,7 @@
     padding: 2rem;
     width: 100%;
     justify-content: center;
-    gap:5rem;
+    gap: 5rem;
 }
 
 .presentation_container>* {
@@ -30,18 +30,17 @@
 .presentation_text {
     padding: 3rem;
     text-align: center;
-    width: 50%;
     max-width: 600px;
 }
 
-.presentation_text p{
+.presentation_text p {
     font-family: ProximaNova;
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.6rem;
 }
 
-.presentation_text h3{
+.presentation_text h3 {
     margin: 1rem;
     margin-top: 0;
 }
@@ -50,6 +49,7 @@
 .presentation_video {
     max-width: 600px;
     min-width: 590px;
+    margin: 20px;
     height: auto;
 }
 
@@ -63,9 +63,10 @@
     box-sizing: border-box;
 }
 
-.img_container{
+.img_container {
     transition: all 0.5s ease;
 }
+
 
 .img_us {
     min-height: auto;
@@ -77,29 +78,89 @@
 
 
 
-.phone,.email{
+.phone,
+.email {
     display: flex;
     justify-content: center;
-    gap:3px;
+    gap: 3px;
     align-items: center;
 }
 
-.phone img,.email img{
+.phone img,
+.email img {
     max-width: 20px;
-    color: #898A8A;
+    fill: #898A8A;
+    white-space: nowrap;
 }
 
-.img_container:hover{
+.img_container:hover {
     transform: scale(1.1);
+    filter: blur(0);
 }
 
-@media (min-width: 1460px) {
-    .contact_us {
-        overflow: hidden;
+@media (max-width: 1200px) {
+    .contact_us:hover>* {
+        filter: blur(0);
     }
-    .img_container{
+
+    .img_container {
         width: 100vh;
     }
-    
-  }
-  
+
+    .presentation_container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .presentation_container>* {
+        width: 100%;
+    }
+
+    .presentation_text {
+        padding: 0;
+        text-align: center;
+        width: 80%;
+        max-width: none;
+    }
+
+    .presentation_text p {
+        font-family: ProximaNova;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.6rem;
+    }
+
+    .presentation_text h3 {
+        margin: 1rem;
+        margin-top: 0;
+    }
+
+    .presentation_video {
+        max-width: none;
+        min-width: 90%;
+        width: 200px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .contact_us {
+        overflow: hidden;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory; 
+        scroll-behavior: smooth;
+    }
+
+    .contact_us * {
+        width: 100%;
+    }
+
+    .img_container {
+        flex: 0 0 auto;
+    }
+    .presentation_container{
+        padding: 0;
+    }
+}
