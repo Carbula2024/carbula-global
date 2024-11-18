@@ -35,7 +35,6 @@ dayjs.updateLocale('es', {
 })
 
 
-// This default export is required in a new `pages/_app.js` file.
 function MyApp({ Component, pageProps }) {
   const tiktokpixelID = process.env.NEXT_PUBLIC_TIKTOK_PIXEL_ID;
   useEffect(() => {
@@ -53,17 +52,22 @@ function MyApp({ Component, pageProps }) {
             referrer: document.referrer || "",
           }),
         });
-        
+
         const data = await response.json();
       } catch (error) {
         console.error('Error al enviar el evento a TikTok:', error);
       }
     };
 
-    sendPageViewEvent(); // Llama al evento al cargar la página
+    if (process.env.NODE_ENV === 'development') {
+      console.log("modo dev");
+    } else if (process.env.NODE_ENV === 'production') {
+      sendPageViewEvent();
+    }
+    
 
   }, []);
-  
+
   useEffect(() => {
     // Initialize Google Tag Manager
     //TagManager.initialize({ gtmId: getGTMid(pageProps.COUNTRY_CODE) });
@@ -79,7 +83,7 @@ function MyApp({ Component, pageProps }) {
       !function (f, b, e, v, n, t, s) {
         if (f.fbq) return; n = f.fbq = function () {
           n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
         };
         if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
         n.queue = []; t = b.createElement(e); t.async = !0;
