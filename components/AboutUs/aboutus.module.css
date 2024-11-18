@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-.aboutus_container>h3 {
+.aboutus_container>h2 {
     padding: 20px;
     color: #3074F1;
     font-size: 2.5rem;
@@ -95,7 +95,6 @@
 
 .img_container:hover {
     transform: scale(1.1);
-    filter: blur(0);
 }
 
 @media (max-width: 1200px) {
@@ -162,5 +161,8 @@
     }
     .presentation_container{
         padding: 0;
+    }
+    .img_container:hover {
+        transform: none;
     }
 }
