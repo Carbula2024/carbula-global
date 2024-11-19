@@ -492,22 +492,22 @@ export const getPreguntasFrecuentes = () => {
 
 export const getWhatsappNumber = (country_code) => {
   const phoneNumbers = {
-    ar: '+56971550647',
-    mx: '+56971550647',
-    uy: '+56971550647',
-    cl: '+56971550647',
-    pe: '+56971550647'
+    ar: '+56975867678',
+    mx: '+56975867678',
+    uy: '+56975867678',
+    cl: '+56975867678',
+    pe: '+56975867678'
   }
   return phoneNumbers[country_code]
 }
 
 export const getPhoneNumber = (country_code) => {
   const phoneNumbers = {
-    ar: '+56971550647',
-    mx: '+56971550647',
-    uy: '+56971550647',
-    cl: '+56971550647',
-    pe: '+56971550647'
+    ar: '+56975867678',
+    mx: '+56975867678',
+    uy: '+56975867678',
+    cl: '+56975867678',
+    pe: '+56975867678'
   }
   return phoneNumbers[country_code]
 }
