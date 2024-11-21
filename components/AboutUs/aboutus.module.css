@@ -146,6 +146,12 @@
 }
 
 @media (max-width: 800px) {
+    .aboutus_container {
+        scroll-margin-top: 0px;
+    }
+}
+
+@media (max-width: 800px) {
     .contact_us {
         overflow: hidden;
         overflow-x: auto;

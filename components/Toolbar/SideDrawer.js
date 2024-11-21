@@ -2,7 +2,7 @@ import React from "react";
 import Link from 'next/link'
 import styles from './toolbar.module.scss'
 import classNames from 'classnames/bind';
-import { getCatalogoURL, getCountryCode, getWhatsappNumber } from "../../utils/helpers";
+import { getCatalogoURL, getCountryCode, getWhatsappNumber, getTiktokLink } from "../../utils/helpers";
 import {useRouter} from 'next/router';
 
 
@@ -27,6 +27,9 @@ const SideDrawer = ({ show, click, }) => {
           <li><a href={ COUNTRY_CODE==='ar' ? '/creditos-para-autos' : `http://api.whatsapp.com/send?phone=${getWhatsappNumber(COUNTRY_CODE)}&text=Hola,%20necesito%20financiar%20la%20compra%20de%20un%20auto`}>Financiamiento</a></li>
           <li>
             <a href={`http://api.whatsapp.com/send?phone=${getWhatsappNumber(COUNTRY_CODE)}&text=Hola,%20tengo%20una%20consulta`} target="__blank">Contacto</a>
+            <li>
+              <a href="#sobre-nosotros">Sobre Nosotos</a>
+            </li>
           </li>
           <li><a href="/preguntas-frecuentes">FAQs</a></li>
           <li>
@@ -36,6 +39,9 @@ const SideDrawer = ({ show, click, }) => {
         </a>
         <a href={`http://api.whatsapp.com/send?phone=${getWhatsappNumber(COUNTRY_CODE)}&text=Hola,%20tengo%20una%20consulta`} target="_blank" rel="noopener noreferrer">
           <img src="/icons/whatsapp-white.svg" alt="WhatsApp" className={styles.icon_wsp_side} />
+        </a>
+        <a href={getTiktokLink(COUNTRY_CODE)} target="_blank" rel="noopener noreferrer">
+          <img src="/icons/tiktokgray.svg" alt="Tiktok" className={styles.icon_tiktok_side} />
         </a>
       </div>
           </li>
