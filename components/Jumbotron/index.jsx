@@ -15,7 +15,7 @@ const Jumbotron = () => {
     <div className={styles.banner_mobile}>
       {/* Banner para pantallas móviles */}
       <img
-        src="/images/banner/mobile2.png"
+        src="/images/banner/mobile.png"
         alt="Banner Mobile"
         className={styles.banner_image}
       />
