@@ -43,9 +43,19 @@
   gap: 15px;
 }
 
-.icon_insta_side, .icon_wsp_side {
+.icon_insta_side, .icon_wsp_side, .icon_tiktok_side {
   width: 40px;
   height: auto;  
+}
+
+.icon_tiktok_side{
+  color: antiquewhite;
+}
+
+.icon_tiktok{
+  max-width: 20px;
+  height: auto;
+  color: white;
 }
 
 .icon_wsp_side:hover {

@@ -492,22 +492,23 @@ export const getPreguntasFrecuentes = () => {
 
 export const getWhatsappNumber = (country_code) => {
   const phoneNumbers = {
-    ar: '+56971550647',
-    mx: '+56971550647',
-    uy: '+56971550647',
-    cl: '+56971550647',
-    pe: '+56971550647'
+    ar: '+56975867678',
+    mx: '+56975867678',
+    uy: '+56975867678',
+    cl: '+56975867678',
+    pe: '+56975867678'
   }
   return phoneNumbers[country_code]
 }
 
+
 export const getPhoneNumber = (country_code) => {
   const phoneNumbers = {
-    ar: '+56971550647',
-    mx: '+56971550647',
-    uy: '+56971550647',
-    cl: '+56971550647',
-    pe: '+56971550647'
+    ar: '+56975867678',
+    mx: '+56975867678',
+    uy: '+56975867678',
+    cl: '+56975867678',
+    pe: '+56975867678'
   }
   return phoneNumbers[country_code]
 }
@@ -582,6 +583,17 @@ export const getInstagramLink = country_code=>{
   const urls={
     ar: 'https://www.instagram.com/carbula.ar/',
     cl: 'https://www.instagram.com/carbula.chile/',
+    mx: 'https://www.instagram.com/carbula.mx/',
+    pe: 'https://www.instagram.com/carbula.pe/',
+    uy: 'https://www.instagram.com/carbula.uy/'
+  }
+  return urls[country_code]
+}
+
+export const getTiktokLink = country_code=>{
+  const urls={
+    ar: 'https://www.instagram.com/carbula.ar/',
+    cl: 'https://www.tiktok.com/@carbula.chile',
     mx: 'https://www.instagram.com/carbula.mx/',
     pe: 'https://www.instagram.com/carbula.pe/',
     uy: 'https://www.instagram.com/carbula.uy/'

@@ -3,6 +3,7 @@
     width: 100%;
     padding: 0 1rem;
     box-sizing: border-box;
+    scroll-margin-top: 60px;
 }
 
 .aboutus_container>h2 {
@@ -141,6 +142,12 @@
         min-width: 90%;
         width: 200px;
         margin: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .aboutus_container {
+        scroll-margin-top: 0px;
     }
 }
 
