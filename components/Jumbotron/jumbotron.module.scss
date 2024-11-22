@@ -1,4 +1,4 @@
-.jumbotron__container {
+/*.jumbotron__container {
   background-image: url("/images/banner/desktop.png");
   background-size: cover;
   background-position: bottom;
@@ -94,5 +94,36 @@
   }
   .text__container {
     width: 95%;
+  }
+}
+*/
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.banner_desktop {
+  display: block;
+}
+
+.banner_mobile {
+  display: none;
+}
+
+.banner_image {
+  width: 100%;
+  height: auto;
+}
+
+/* Media Query para tamaños móviles */
+@media (max-width: 768px) {
+  .banner_desktop {
+    display: none;
+  }
+
+  .banner_mobile {
+    display: block;
   }
 }

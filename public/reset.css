@@ -240,8 +240,10 @@ select:disabled option {
 
 nav {
   background-color: transparent;
+  /*
   position: fixed;
   z-index: 100;
+  */
 }
 
 i {
