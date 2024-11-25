@@ -156,7 +156,7 @@
 .side-drawer {
   height: 100%;
   background: #fafafa;
-  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 0px 7px  #B8B9B9;
   position: fixed;
   top: 0;
   right: 0;
@@ -318,7 +318,7 @@
   .toolbar {
     height: 45px;
     &.gradient {
-      background: rgba(0, 0, 0, 0.5);
+      background:  #B8B9B9;
     }
   }
   .toggle-button {
