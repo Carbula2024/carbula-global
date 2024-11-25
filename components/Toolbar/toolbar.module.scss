@@ -253,6 +253,9 @@
   display: none;
 }
 @media (max-width: 1300px) {
+  .toolbar{
+    width: 98%;
+  }
   .toolbar__items {
     ul {
       width: 50%;
