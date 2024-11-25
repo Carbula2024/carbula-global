@@ -19,6 +19,9 @@ html {
   scroll-behavior: smooth;
 }
 
+nav{
+  display: flex;
+}
 
 
 /* Cotizador Autored*/
