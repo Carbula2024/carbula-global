@@ -1,15 +1,15 @@
 .jumbotron__container {
-  background-image: url("/images/carbula-header-desktop.webp");
-  background-size: cover;
-  background-position: bottom;
-  background-color: #000;
-  background-repeat: no-repeat;
-  height: 460px;
-  padding: 30px 60px;
+  padding: 30px 0px;
+  position: relative; /* Define el contexto de posicionamiento */
 }
 .text__container {
   width: 70%;
   margin: 100px auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  color: white;
 }
 .title {
   font-size: 2.5rem;
@@ -21,6 +21,16 @@
 .subtitle {
   color: #fff;
   margin-top: 30px;
+}
+
+.banner_desktop{
+  min-height: 300px;
+  width: 100%;
+}
+
+.banner_mobile{
+  display: none;
+  width: 100%;
 }
 
 @media (max-width: 1441px) {
@@ -35,9 +45,15 @@
 @media (max-width: 1025px) {
 }
 @media (max-width: 769px) {
+  .banner_desktop{
+    display: none;
+  }
+
+  .banner_mobile{
+    display: block;
+  }
   .jumbotron__container {
     height: 640px;
-    background-image: url("/images/carbula-header-mobile.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -100px;
@@ -53,8 +69,9 @@
   }
 }
 @media (max-width: 915px) {
+
   .jumbotron__container {
-    padding: 30px 20px;
+    padding: 67px 0px;
     background-position-y: 0px;
     height: 211px;
     p {
@@ -74,6 +91,7 @@
 }
 @media (max-width: 375px) {
   .jumbotron__container {
+    padding: 50px 0px;
     background-position-y: 0px;
   }
   .title {
