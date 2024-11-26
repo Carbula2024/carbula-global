@@ -1,0 +1,22 @@
+{
+    "articles": [
+        {
+            "id": 1,
+            "title": "Revisa Estas Deudas Antes de Comprar un Auto Usado",
+            "url": "/images/articles/deuda.jpeg",
+            "content": ""
+        },
+        {
+            "id": 2,
+            "title": "Cómo Consignar tu Auto con Carbula en 4 Simples Pasos",
+            "url": "/images/articles/consignacion.jpeg",
+            "content": ""
+        },
+        {
+            "id": 3,
+            "title": "Cómo Financiar tu Auto con Carbula: ¡Opciones de Financiamiento y Asesoría Completa!",
+            "url": "/images/articles/financiar.jpeg",
+            "content": ""
+        }
+    ]
+}

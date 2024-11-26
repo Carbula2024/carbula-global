@@ -16,6 +16,7 @@ import { useTranslation } from 'next-i18next';
 import webinprogress from '../components/WebInProgress';
 import Widget from '../components/Widget/Widget';
 import AboutUs from '../components/AboutUs/AboutUs'
+import Articles from '../components/Articles/Articles';
 
 
 const BlackoutComponent = dynamic(import('../components/BlackoutComponent'))
@@ -128,6 +129,7 @@ const Home = ({ zonas, referer, COUNTRY_CODE }) => {
         <Jumbotron title={title} subtitle={subtitle} />
       </animated.div>
       <Widget></Widget>
+      <Articles></Articles>
       <AboutUs></AboutUs>
       <section className={styles.section1__container}>
         <div className={styles.text__container}>
