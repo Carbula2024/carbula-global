@@ -44,11 +44,11 @@ const PreguntasFrecuentes = () => {
         <h1>¿Cómo vender y comprar de forma segura un auto seminuevo?</h1>
         </div>
         <div className={styles.container}>
-        <h4>Preguntas frecuentes sobre vender</h4>
+        <h4>Preguntas frecuentes sobre como vender tu auto</h4>
         <div className={styles.preguntas}>
         <FaqPreguntasFrecuentesVenderGenerales country_code={'ar'}/>
         </div>
-        <h4>Preguntas frecuentes sobre comprar</h4>
+        <h4>Preguntas frecuentes sobre como comprar un auto usado</h4>
         <div className={styles.preguntas}>
         <FaqPreguntasFrecuentesComprarGenerales/>
         </div>
@@ -69,11 +69,11 @@ const PreguntasFrecuentes = () => {
         <h1>¿Cómo vender y comprar de forma segura un auto seminuevo?</h1>
         </div>
         <div className={styles.container}>
-        <h4>Preguntas frecuentes sobre vender</h4>
+        <h4>Preguntas frecuentes sobre como vender tu auto</h4>
         <div className={styles.preguntas}>
         <FaqPreguntasFrecuentesVenderChile/>
         </div>
-        <h4>Preguntas frecuentes sobre comprar</h4>
+        <h4>Preguntas frecuentes sobre como comprar un auto usado</h4>
         <div className={styles.preguntas}>
         <FaqPreguntasFrecuentesComprarChile/>
         </div>
@@ -94,11 +94,11 @@ const PreguntasFrecuentes = () => {
         <h1>¿Cómo vender y comprar de forma segura un auto seminuevo?</h1>
         </div>
         <div className={styles.container}>
-        <h4>Preguntas frecuentes sobre vender</h4>
+        <h4>Preguntas frecuentes sobre como vender tu auto</h4>
         <div className={styles.preguntas}>
         <FaqPreguntasFrecuentesVenderGenerales country_code={'mx'}/>
         </div>
-        <h4>Preguntas frecuentes sobre comprar</h4>
+        <h4>Preguntas frecuentes sobre como comprar un auto usado</h4>
         <div className={styles.preguntas}>
         <FaqPreguntasFrecuentesComprarGenerales/>
         </div>
@@ -119,11 +119,11 @@ const PreguntasFrecuentes = () => {
         <h1>¿Cómo vender y comprar de forma segura un auto seminuevo?</h1>
         </div>
         <div className={styles.container}>
-        <h4>Preguntas frecuentes sobre vender</h4>
+        <h4>Preguntas frecuentes sobre como vender tu auto</h4>
         <div className={styles.preguntas}>
         <FaqPreguntasFrecuentesVenderGenerales country_code={'pe'}/>
         </div>
-        <h4>Preguntas frecuentes sobre comprar</h4>
+        <h4>Preguntas frecuentes sobre como comprar un auto usado</h4>
         <div className={styles.preguntas}>
         <FaqPreguntasFrecuentesComprarGenerales/>
         </div>
@@ -143,11 +143,11 @@ const PreguntasFrecuentes = () => {
         <h1>¿Cómo vender y comprar de forma segura un auto seminuevo?</h1>
         </div>
         <div className={styles.container}>
-        <h4>Preguntas frecuentes sobre vender</h4>
+        <h4>Preguntas frecuentes sobre como vender tu auto</h4>
         <div className={styles.preguntas}>
         <FaqPreguntasFrecuentesVenderGenerales country_code={'uy'}/>
         </div>
-        <h4>Preguntas frecuentes sobre comprar</h4>
+        <h4>Preguntas frecuentes sobre como comprar un auto usado</h4>
         <div className={styles.preguntas}>
         <FaqPreguntasFrecuentesComprarGenerales/>
         </div>
