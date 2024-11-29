@@ -1,5 +1,35 @@
 
 .card{
+    border-radius: 10px;
+    padding: 30px;
     display: flex;
-    border:2px solid black;
+    flex-direction: column;
+    justify-content:space-between;
+    border:1px solid black;
+    width: 300px;
+    height: 300px;
 }
+
+.card_image{
+    max-width: 100%;
+    overflow: hidden;
+    height: auto;
+}
+
+.card_image img{
+    width: 100%;
+    min-width: 300px;
+    object-fit: cover;
+    height: 200px;
+}
+
+.card h3{
+    height: 20%;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+
+}
+
+
+

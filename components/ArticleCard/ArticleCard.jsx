@@ -1,13 +1,15 @@
 import styles from "./card.module.css"
 
-const ArticleCard = (urlimg, title) =>{
-    return(
-        <>
-        <div className={styles.card}>
-            <img src={urlimg} alt="" />
-            <span>{title}</span>
+const ArticleCard = ({ urlimg, title, id}) => {
+
+    return (
+      <a href={`/blog/${id}`} className={styles.card}>
+        <div className={styles.card_image}>
+          <img src={urlimg} alt={title} />
         </div>
-        </>
-    )
-}
-export default ArticleCard 
+        <h3>{title}</h3>
+      </a>
+    );
+  };
+  
+  export default ArticleCard;
