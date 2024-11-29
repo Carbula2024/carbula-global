@@ -123,7 +123,7 @@ const FaqPreguntasFrecuentes = ({country_code}) => {
         <AccordionItemHeading className={styles.accordion__heading}>
           <AccordionItemButton className={styles.accordion__button}>
           <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <span itemspanrop="name">¿Es seguro vender un seminuevo así?</span>
+            <span itemspanrop="name">¿Es seguro vender un auto usado así?</span>
           </div>
           </AccordionItemButton>
         </AccordionItemHeading>
