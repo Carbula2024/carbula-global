@@ -32,7 +32,7 @@ const Articles = () => {
     return (
         <>
             <div className={styles.content}>
-                <h2>Lista de Articulos</h2>
+                <h2>Articulos</h2>
                 <div className={styles.card_articles_content}>
                     {sortedArticles.map((article) => (
                         <ArticleCard
