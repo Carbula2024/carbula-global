@@ -5,6 +5,7 @@
  width: 100%;
  padding: 0 1rem;
  gap:50px;
+ padding-bottom: 30px;
 }
 
 .content{
@@ -19,6 +20,7 @@
     color: #3074F1;
     font-size: 2.5rem;
     line-height: 2.5rem;
+    padding-bottom: 40px;
 }
 
 
@@ -27,10 +29,19 @@
     .card_articles_content{
     grid-template-columns: 1fr 1fr;
     }
+
+    .card_articles_content > :nth-child(3) {
+        grid-column: span 2; 
+        justify-self: center; 
+      }
 }
 
 @media (max-width: 818px) {
     .card_articles_content{
     grid-template-columns: 1fr;
     }
+    .card_articles_content > :nth-child(3) {
+        grid-column: auto;
+        justify-self: auto;
+      }
 }
