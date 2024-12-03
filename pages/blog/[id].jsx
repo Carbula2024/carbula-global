@@ -104,7 +104,7 @@ const Blog = () => {
 
       <div className={styles.blog}>
         <aside className={styles.aside}>
-          <h3>articulos anteriores:</h3>
+          <h3>Articulos anteriores:</h3>
           <ul>
             {articles.map((article) => (
               <li><a href={`/blog/${article.id}`}><h4>{article.title}</h4></a></li>

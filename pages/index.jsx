@@ -129,7 +129,6 @@ const Home = ({ zonas, referer, COUNTRY_CODE }) => {
         <Jumbotron title={title} subtitle={subtitle} />
       </animated.div>
       <Widget></Widget>
-      <Articles></Articles>
       <AboutUs></AboutUs>
       <section className={styles.section1__container}>
         <div className={styles.text__container}>
@@ -200,6 +199,7 @@ const Home = ({ zonas, referer, COUNTRY_CODE }) => {
           <h3 className={styles.text__primary}>{t('testimonios')}</h3>
           <NuestrosClientes country_code={COUNTRY_CODE} />
         </div>
+        <Articles></Articles>
         <div className={styles.somos__text}>{getSomosText()}</div>
         <hr />
       </section>
