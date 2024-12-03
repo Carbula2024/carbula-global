@@ -4,43 +4,43 @@
             "id": 1,
             "title": "Evita Sorpresas: Revisa Estas Deudas Antes de Comprar un Auto Usado",
             "url": "/images/articles/deuda.jpeg",
-            "content": ""
+            "fecha":"2024-11-23"
         },
         {
             "id": 2,
             "title": "Cómo Consignar tu Auto con Carbula en 4 Simples Pasos",
             "url": "/images/articles/consignacion.jpeg",
-            "content": ""
+            "fecha":"2024-11-24"
         },
         {
             "id": 3,
             "title": "Cómo Financiar tu Auto con Carbula: ¡Opciones de Financiamiento y Asesoría Completa!",
             "url": "/images/articles/financiar.jpeg",
-            "content": ""
+            "fecha":"2024-11-25"
         },
         {
             "id": 4,
             "title": "Los Autos Usados Más Populares en Chile en 2024",
             "url": "/images/articles/Articulo4.jpeg",
-            "content": ""
+            "fecha":"2024-11-26"
         },
         {
             "id": 5,
             "title": "Ventajas de Comprar un Auto Usado en Chile",
             "url": "/images/articles/Articulo5.jpeg",
-            "content": ""
+            "fecha":"2024-11-27"
         },
         {
             "id": 6,
             "title": "Cómo Elegir un Auto Usado Cuando Tienes Hijos?",
-            "url": "/images/articles/articulo6.webp",
-            "content": ""
+            "url": "/images/articles/articulo6.jpg",
+            "fecha":"2024-11-28"
         },
         {
             "id": 7,
             "title": "La Reventa de Autos Usados en Chile: Un Mercado en Crecimiento",
-            "url": "/images/articles/articulo7.webp",
-            "content": ""
+            "url": "/images/articles/articulo7.jpg",
+            "fecha":"2024-11-29"
         }        
     ]
 }

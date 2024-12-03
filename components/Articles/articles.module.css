@@ -1,6 +1,7 @@
 .card_articles_content{
- display: flex;
+ display: grid;
  justify-content: center;
+ grid-template-columns: repeat(3, 1fr);
  width: 100%;
  padding: 0 1rem;
  gap:50px;
@@ -18,4 +19,18 @@
     color: #3074F1;
     font-size: 2.5rem;
     line-height: 2.5rem;
+}
+
+
+
+@media (max-width: 1222px) {
+    .card_articles_content{
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 818px) {
+    .card_articles_content{
+    grid-template-columns: 1fr;
+    }
 }

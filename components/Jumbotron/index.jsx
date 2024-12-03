@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
 import styles from './jumbotron.module.scss';
 
-const Jumbotron = ({ title, subtitle }) => {
+const Jumbotron = ({ title, subtitle, className }) => {
   return (
-    <div className={styles.jumbotron__container}>
+    <div className={`${styles.jumbotron__container} ${className}`}>
       <div className={styles.text__container}>
         <h2 className={styles.title}>{title[0]}<br />{title[1]}</h2>
         <p className={styles.subtitle}><ul>{subtitle.map(element => <Fragment><li>{element}</li></Fragment>)}</ul></p>

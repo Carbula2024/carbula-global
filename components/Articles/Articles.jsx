@@ -22,6 +22,7 @@ const Articles = () => {
         fetchArticles();
     }, []);
 
+
     if (!articles || articles.length === 0) {
         return <div>No articles available.</div>;
     }
