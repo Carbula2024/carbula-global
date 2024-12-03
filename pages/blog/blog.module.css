@@ -156,6 +156,10 @@
     padding-inline-start: 20px;
 }
 
+.aside ul li a{
+    text-decoration: none;
+}
+
 @media (max-width: 845px) {
     .text_container {
         padding: 20px 5%;
