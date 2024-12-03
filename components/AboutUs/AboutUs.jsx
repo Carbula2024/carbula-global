@@ -4,10 +4,10 @@ const AboutUs = () => {
     return (
         <>
             <div className={styles.aboutus_container} id='sobre-nosotros'>
-                <h2>Sobre nosotros</h2>
                 <div className={styles.presentation_container}>
                     <div className={styles.presentation_text}>
-                        <h3>Quienes somos</h3>
+                        <span>Sobre Carbula</span>
+                        <h3>Conectamos compradores y vendedores <b>en un entorno seguro y eficiente.</b> </h3>
                         <p>Hacemos que vender tu auto usado sea seguro y sencillo. Somos tu socio estratégico para vender tu auto de forma segura y eficiente. Comprendemos las dudas al vender un vehículo usado, por eso ofrecemos un proceso transparente y sin complicaciones, respaldado por un equipo profesional que se encarga de todo: desde la fotografía hasta la gestión de publicaciones y negociaciones. Además, si encuentras el auto de tus sueños en nuestro catálogo, podemos recibir tu auto como parte de pago y ayudarte con el financiamiento. Nuestro objetivo es proteger tus intereses, garantizar el mejor valor posible y brindarte una experiencia positiva, con respaldo constante y profesionalismo para tu tranquilidad.
                         CÁRBULA, establecidos desde 2018.</p>
                     </div>
