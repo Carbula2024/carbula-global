@@ -194,6 +194,7 @@
         display: none;
     }
     .nav_bar{
-        display: flex;
+        display: none;
+        max-width: 28px;
     }
 }
