@@ -117,6 +117,24 @@ function MyApp({ Component, pageProps }) {
           gtag('config', 'AW-11492086125');
         `}
       </Script>
+      <Script id="gtag-conversion" strategy="afterInteractive">
+        {`
+          function gtag_report_conversion(url) {
+            var callback = function () {
+              if (typeof(url) != 'undefined') {
+                window.location = url;
+              }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-11492086125/8a2LCNXU1PYZEO2i7ecq',
+                'value': 1.0,
+                'currency': 'CLP',
+                'event_callback': callback
+            });
+            return false;
+          }
+        `}
+      </Script>
       {/* tik-tok Pixel */}
       <Script
         id="tiktok-pixel"
