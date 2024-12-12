@@ -108,13 +108,13 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       {/* google adds*/}
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-YPVCKX90N6" />
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11492086125" />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-YPVCKX90N6');
+          gtag('config', 'AW-11492086125');
         `}
       </Script>
       {/* tik-tok Pixel */}
