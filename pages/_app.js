@@ -69,14 +69,6 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   useEffect(() => {
-    // Initialize Google Tag Manager
-    //TagManager.initialize({ gtmId: getGTMid(pageProps.COUNTRY_CODE) });
-    {/* Google tag (gtag.js) */ }
-    // Google Analytics
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-YPVCKX90N6');
 
     // Initialize Facebook Pixel
     if (typeof window !== 'undefined') {
