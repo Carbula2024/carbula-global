@@ -223,4 +223,23 @@
         width: 576px;
         height: 263px;
     }
+
+    .presentation_text h3{
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 1.7rem;
+    }
+
 }
+
+@media (max-width: 420){
+    .presentation_text h3{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    .aboutus_container{
+        padding: 0;
+    }
+    }
