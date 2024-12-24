@@ -196,6 +196,7 @@
         overflow-x: auto;
         scroll-snap-type: x mandatory; 
         scroll-behavior: smooth;
+        flex-direction: column;
     }
 
     .contact_us * {
