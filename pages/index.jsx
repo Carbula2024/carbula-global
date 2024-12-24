@@ -15,6 +15,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import webinprogress from '../components/WebInProgress';
 import Widget from '../components/Widget/Widget';
+import LeadsForm from '../components/LeadsForm/LeadsForm'; 
 import AboutUs from '../components/AboutUs/AboutUs'
 import Articles from '../components/Articles/Articles';
 
@@ -128,7 +129,7 @@ const Home = ({ zonas, referer, COUNTRY_CODE }) => {
       <animated.div style={titleProps}>
         <Jumbotron title={title} subtitle={subtitle} />
       </animated.div>
-      <Widget></Widget>
+      <LeadsForm></LeadsForm>
       <AboutUs></AboutUs>
       <section className={styles.section1__container}>
         <div className={styles.text__container}>

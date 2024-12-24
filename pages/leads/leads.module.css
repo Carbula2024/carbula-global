@@ -1,0 +1,35 @@
+.head_titles th{
+    background-color: azure;
+    border-bottom: solid 1px black;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.lead_container{
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.leads_row td{
+    padding: 5px;
+    font-size: 1rem;
+}
+
+
+
+.tomado{
+    background-color: green;
+
+}
+
+.pendiente{
+    background-color: orange;
+}
+
+.cerrado{
+    background-color: darkgray;
+}

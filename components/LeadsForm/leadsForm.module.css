@@ -1,0 +1,89 @@
+.form {
+    background-color: #f9f9ff;
+    width: 50%;
+    padding: 30px;
+    margin: 0 auto;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.title_leadsForm{
+    margin: 50px;
+    text-align: center;
+
+}
+
+.form h3{
+    text-align: center;
+    padding:5px ;
+    padding-bottom: 7px;
+}
+
+.input_grup {
+    display: flex;
+    flex-direction: row;
+}
+
+.input_grup input{
+    border: solid 1px black;
+}
+
+.input_grup select{
+    width: 72%;
+    border: solid 1px black;
+}
+
+
+
+.btn_form {
+    background-color: #33CC99;
+    color: white;
+    border: 3px solid #33CC99;
+}
+
+.precio_esperado{
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    display: flex;
+    z-index: 2;
+    min-width: 124px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    border-radius: 10px;
+}
+
+
+.button_grup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.form_ok{
+    margin: 50px;
+}
+
+@media (max-width: 772px) {
+    .form{
+        width: 80%;
+    }
+    .input_grup {
+        flex-direction: column;
+    }
+
+    .input_grup input{
+        width: 100%;
+    }
+}
