@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const filePath = path.join(process.cwd(), 'public', 'data', 'leads.json');
+const filePath = path.join(process.cwd(), 'data', 'leads.json');
 
 const createLead = async (leadData) => {
     let idLead = 0;
