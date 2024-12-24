@@ -77,10 +77,9 @@ const LeadsForm = () => {
     setStep(step - 1);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Datos del formulario:', formData);
-    fetch("/api/leads/createLead", {
+    await fetch("/api/leads/createLead", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -94,7 +93,6 @@ const LeadsForm = () => {
         return response.json();
       })
       .then(data => {
-        console.log('Respuesta de la API:', data);
         nextStep()
         alert('se envio')
       })
