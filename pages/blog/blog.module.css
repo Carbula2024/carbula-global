@@ -33,7 +33,7 @@
     gap:30px;
     padding-right:30px ;
     width: 100%;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .nav_bar{

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from "react-scroll";
 import { getCatalogoURL, getTerminosCondiciones, getComoVender, getComoComprar, getFacebookLink, getInstagramLink } from '../../utils/helpers';
 import Button from '../Button';
+import MapOffice from '../MapOffice/index'
 import styles from './footerInfo.module.scss';
 
 const FooterInfo = ({ blue, grey, white, country_code }) => {
@@ -20,6 +21,7 @@ const FooterInfo = ({ blue, grey, white, country_code }) => {
     return `/icons/${file}.svg`;
   }
   return (<div className={styles.footerInfo__container}  id='contacto'> 
+      <MapOffice></MapOffice>
     <img src={renderImagSrc('carbula')} alt="Cárbula Autos" title="Cárbula Autos" className={styles.footerInfo__logo} />
     <div className={styles.elements__container}>
       <div className={styles.text__area}>

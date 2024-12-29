@@ -1,0 +1,33 @@
+.map_container{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    padding: 0 0 20px 0;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.map_container *{
+    display: flex;
+}
+
+.text_office{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1025px) {
+    .map_container{
+        flex-direction: column;
+        min-height: 250px;
+    }
+  }
+
+@media (max-width: 471px) {
+    .map_container{
+        flex-direction: column;
+        min-height: 295px;
+    }
+}
+
