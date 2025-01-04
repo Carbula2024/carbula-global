@@ -18,6 +18,21 @@
   letter-spacing: -1px;
   line-height: 1.2;
 }
+
+.list_jumbotron{
+  list-style: none;
+}
+
+.list_jumbotron img{
+  width: 20px;
+  padding: 5px;
+  display: inline;
+}
+
+.list_jumbotron li{
+  display: flex;
+}
+
 .subtitle {
   color: #fff;
   margin-top: 30px;
