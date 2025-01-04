@@ -48,12 +48,16 @@
     line-height: 2rem;
 }
 
-.presentation_text span{
+.presentation_text > span{
     display: block;
     color:#3074F1;
     font-size: 1.3em;
     text-align: start;
     width: 100%;
+}
+
+.presentation_text p span{
+
 }
 
 
@@ -144,7 +148,7 @@
         align-items: center;
     }
 
-    .presentation_text span{
+    .presentation_text > span{
         display: none;
     }
 
