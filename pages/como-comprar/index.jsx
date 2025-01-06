@@ -131,7 +131,7 @@ const ComoComprar = () => {
                 <p>Aceptamos efectivo, tarjeta de crédito, Vale Vista o transferencia bancaria. Asimismo, siempre buscamos acordar el método de pago en base a lo que le resulte más conveniente tanto a la parte compradora como vendedora.</p>
               </div>
             </div>
-            <h4 itemprop="name">6. ¿Brindan financiación?</h4>
+            <h4 itemprop="name">6. ¿Brindan financiamiento?</h4>
             <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
               <div itemprop="text">
                 <p>Sí. Financiamos hasta el <b>70% del valor de tu vehículo</b> y trabajamos con los líderes nacionales en prendarios para que puedas acceder a tu nuevo auto de la mejor manera.</p>
