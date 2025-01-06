@@ -2,7 +2,6 @@ import { Fragment } from 'react';
 import styles from './jumbotron.module.scss';
 
 const newSubtitle = [
-  "Establecidos en 2018, Cárbula ha vendido sobre 3000 autos.",
   "Transferimos autos a través de Autofact de manera 100% digital y segura.",
   "Tasamos y verificamos el estado y kilometraje de cada auto con Autored.",
   "Recibimos tu auto en parte de pago, sujeto a evaluación."
