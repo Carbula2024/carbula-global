@@ -16,8 +16,8 @@ const Jumbotron = ({ title, subtitle, className }) => {
         <p className={styles.subtitle}><ul className={styles.list_jumbotron}>{newSubtitle.map(element => <Fragment><li><img src="./../icons/check.svg" alt="" />{element}</li></Fragment>)}</ul></p>
         <p className={styles.subtitle_mobile}>
           <ul className={styles.list_jumbotron_mobile}>
-            <li><a href="#autored-tab-content">Quiero vender mi auto</a></li>
-            <li><a href="https://listado.mercadolibre.cl/_Tienda_carbula">Busco mi próximo auto</a></li>
+            <li><a href="#autored-tab-content" data-gtm-id="quiero_vender_btn">Quiero vender mi auto</a></li>
+            <li><a href="https://listado.mercadolibre.cl/_Tienda_carbula" data-gtm-id="quiero_comprar_btn">Busco mi próximo auto</a></li>
           </ul>
           </p>
       </div>
