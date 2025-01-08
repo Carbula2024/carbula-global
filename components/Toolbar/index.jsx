@@ -54,19 +54,19 @@ const Toolbar = ({ drawerClickHandler }) => {
           {/* <Button><a href={getCatalogoURL(COUNTRY_CODE)} target="__blank">Comprar un auto</a></Button> */}
         </div>
       </div>
-      <div className={styles['toolbar__toggle-button']}>
-        <DrawerToggleButton click={drawerClickHandler} />
-      </div>
       <div className={styles.icons_nav}>
-        <a href={getInstagramLink(COUNTRY_CODE)} target="_blank" rel="noopener noreferrer">
+        <a href={getInstagramLink(COUNTRY_CODE)} target="_blank" rel="noopener noreferrer" className={styles.icon_disp_none}>
           <img src="/icons/instagram.svg" alt="Instagram" className={styles.icon_insta} />
         </a>
         <a href={`http://api.whatsapp.com/send?phone=${getWhatsappNumber(COUNTRY_CODE)}&text=Hola,%20tengo%20una%20consulta`} target="_blank" rel="noopener noreferrer">
           <img src="/icons/whatsapp-white.svg" alt="WhatsApp" className={styles.icon_wsp} />
         </a>
-        <a href={getTiktokLink(COUNTRY_CODE)} target="_blank" rel="noopener noreferrer">
+        <a href={getTiktokLink(COUNTRY_CODE)} target="_blank" rel="noopener noreferrer" className={styles.icon_disp_none}>
           <img src="/icons/tiktok.svg" alt="Tiktok" className={styles.icon_tiktok} />
         </a>
+      </div>
+      <div className={styles['toolbar__toggle-button']}>
+        <DrawerToggleButton click={drawerClickHandler} />
       </div>
     </header>
   )
