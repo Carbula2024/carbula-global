@@ -75,48 +75,6 @@
 }
 
 
-.contact_us {
-    padding: 2rem;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    gap: 1rem;
-    box-sizing: border-box;
-}
-
-.img_container {
-    transition: all 0.5s ease;
-}
-
-
-.img_us {
-    min-height: auto;
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    object-fit: cover;
-}
-
-
-
-.phone,
-.email {
-    display: flex;
-    justify-content: center;
-    gap: 3px;
-    align-items: center;
-}
-
-.phone img,
-.email img {
-    max-width: 20px;
-    fill: #898A8A;
-    white-space: nowrap;
-}
-
-.img_container:hover {
-    transform: scale(1.1);
-}
 
 @media (max-width: 1320px) {
     .presentation_container{
@@ -193,21 +151,7 @@
 }
 
 @media (max-width: 800px) {
-    .contact_us {
-        overflow: hidden;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory; 
-        scroll-behavior: smooth;
-        flex-direction: column;
-    }
 
-    .contact_us * {
-        width: 100%;
-    }
-
-    .img_container {
-        flex: 0 0 auto;
-    }
     .presentation_container{
         padding: 0;
     }
@@ -216,9 +160,6 @@
         font-size: 2rem;
     }
 
-    .img_container:hover {
-        transform: none;
-    }
 }
 
 @media (max-width: 660px) {

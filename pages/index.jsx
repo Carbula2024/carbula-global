@@ -17,6 +17,7 @@ import webinprogress from '../components/WebInProgress';
 import Widget from '../components/Widget/Widget';
 import AboutUs from '../components/AboutUs/AboutUs'
 import Articles from '../components/Articles/Articles';
+import ContactUs from '../components/ContactUs/ContactUs';
 
 
 const BlackoutComponent = dynamic(import('../components/BlackoutComponent'))
@@ -130,6 +131,7 @@ const Home = ({ zonas, referer, COUNTRY_CODE }) => {
       </animated.div>
       <Widget></Widget>
       <AboutUs></AboutUs>
+      <ContactUs></ContactUs>
       <section className={styles.section1__container}>
         <div className={styles.text__container}>
           <h1 className={styles.section1__title}>{t('section1Title')}</h1>
