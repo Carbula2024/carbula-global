@@ -30,8 +30,7 @@ const FaqPreguntasFrecuentes = () => {
           </div>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
             <div itemprop="text">
-              <ul><ol>3.Completa el formulario con tus datos y…listo. Uno de nuestros asesores se comunicará contigo para compartirte más información.
-              Para más detalles acerca del proceso de compra, <a href="/como-comprar" target="__blank">haz click aquí.</a></ol></ul>
+              <ul><ol>3.Completa el formulario con tus datos y…listo. Uno de nuestros asesores se comunicará contigo para compartirte más información.</ol></ul>
             </div>
           </div>
 
