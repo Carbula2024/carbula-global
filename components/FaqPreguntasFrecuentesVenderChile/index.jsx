@@ -30,7 +30,7 @@ const FaqPreguntasFrecuentes = () => {
           </div>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
             <div itemprop="text">
-              <ul><ol>3.Mayor ganancia: vendemos por hasta por hasta un 25% más de dinero que en medios tradicionales (por ej. automotoras, Kavak y OLX).</ol></ul>
+              <ul><ol>3.Mayor ganancia: vendemos hasta por un 25% más de dinero que en medios tradicionales (por ej. automotoras, Kavak y OLX).</ol></ul>
             </div>
           </div>
         </AccordionItemPanel>
