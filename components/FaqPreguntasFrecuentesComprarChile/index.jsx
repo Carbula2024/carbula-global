@@ -20,7 +20,7 @@ const FaqPreguntasFrecuentes = () => {
         <AccordionItemPanel className={styles.accordion__panel}>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
             <div itemprop="text">
-              <ul><ol>1.Ingresa a nuestro <a href="https://catalogo.carbula.ar/" target="__blank">catálogo de autos.</a></ol></ul>
+              <ul><ol>1.Ingresa a nuestro <a href="https://listado.mercadolibre.cl/_Tienda_carbula" target="__blank">catálogo de autos.</a></ol></ul>
             </div>
           </div>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
