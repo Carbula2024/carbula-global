@@ -18,6 +18,7 @@ import Widget from '../components/Widget/Widget';
 import AboutUs from '../components/AboutUs/AboutUs'
 import Articles from '../components/Articles/Articles';
 import ContactUs from '../components/ContactUs/ContactUs';
+import Featured from '../components/Featured/Featured';
 
 
 const BlackoutComponent = dynamic(import('../components/BlackoutComponent'))
@@ -129,6 +130,7 @@ const Home = ({ zonas, referer, COUNTRY_CODE }) => {
       <animated.div style={titleProps}>
         <Jumbotron title={title} subtitle={subtitle} />
       </animated.div>
+      <Featured></Featured>
       <Widget></Widget>
       <AboutUs></AboutUs>
       <ContactUs></ContactUs>

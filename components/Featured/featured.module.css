@@ -1,0 +1,52 @@
+.carousel {
+    width:100vw; /* Ancho relativo al tamaño de la pantalla */
+    /*max-width: 300px; /* Ancho máximo en pantallas grandes */
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 24px 0;
+    margin: 0 auto;
+}
+
+.carousel_track {
+    display: flex;
+    width: calc(100vw * 3); /* Ajuste relativo al contenedor */
+    animation: slide 12s infinite;
+    transition: transform 0.5s ease-in-out;
+}
+
+.img_container {
+    text-align: center;
+    flex: 0 0 100vw; /* Cada imagen ocupa el 100% del contenedor */
+    box-sizing: border-box;
+    position: relative; /* Asegura que los elementos hijos absolutos se posicionen respecto a este contenedor */
+}
+
+.img_us {
+    width: 100%; /* Imagen se adapta al ancho del contenedor */
+    height: auto;
+    object-fit: cover;
+}
+
+.btn_details {
+    position: absolute; /* Posiciona el botón sobre la imagen */
+    bottom: 10px; /* Ajusta la posición vertical */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Centra el botón */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    color: white; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    26.67% { transform: translateX(0); }
+    33.33% { transform: translateX(-100vw); }
+    59.99% { transform: translateX(-100vw); }
+    66.67% { transform: translateX(-200vw); }
+    93.33% { transform: translateX(-200vw); }
+    100% { transform: translateX(0); }
+}
