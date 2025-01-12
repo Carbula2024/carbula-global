@@ -38,6 +38,7 @@ const Featured = () => {
     return (
         <>
             <div className={styles.featured_container}>
+                <h3 className={styles.title_featured}>Destacados de la semana</h3>
                 <div className={styles.carousel}>
                     <div className={styles.carousel_track}>
                         {data.map((car) =>

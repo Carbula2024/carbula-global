@@ -1,9 +1,17 @@
 .featured_container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
     width: 100%;
+}
+
+.title_featured{
+    color: #3074f1;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
 }
 
 .carousel {
