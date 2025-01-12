@@ -8,7 +8,7 @@ class MyDocument extends Document {
     return { ...initialProps }
   }
 
-  
+
 
 
   render() {
@@ -16,7 +16,7 @@ class MyDocument extends Document {
     return (
       <Html lang="es">
         <Head>
-        {isProduction && (
+          {isProduction && (
             <script
               dangerouslySetInnerHTML={{
                 __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -42,6 +42,15 @@ class MyDocument extends Document {
                 ></iframe>
               </noscript>
               {/* End Google Tag Manager (noscript) */}
+              {/* Clixtell Tracking Code */}
+              <script type='text/javascript'>
+                var script=document.createElement('script');
+                var prefix=document.location.protocol;
+                script.async=true;script.type='text/javascript';
+                var target=prefix + '//scripts.clixtell.com/track.js';
+                script.src=target;var elem=document.head;
+                elem.appendChild(script);
+              </script>
             </>
           )}
           <Main />
