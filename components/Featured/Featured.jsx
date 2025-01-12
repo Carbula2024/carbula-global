@@ -1,26 +1,57 @@
 import styles from './featured.module.css'
-import Jumbotron from '../Jumbotron/index'
+import FeaturedCard from '../FeaturedCard/FeaturedCard';
 
-const Featured = () =>{
-    return(
+const Featured = () => {
+    const data = [
+        {
+            id: 1,
+            marca: "Toyota",
+            modelo: "Auris",
+            ano: "2019",
+            kms: "67.500",
+            precio: "12.190.000",
+            image: "/images/featured/auris.webp",
+            url:"https://auto.mercadolibre.cl/MLC-1565603227-toyota-auris-lei-cvt-16-aut-2019-_JM"
+        },
+        {
+            id: 2,
+            marca: "Jaguar",
+            modelo: "XF",
+            ano: "2018",
+            kms: "29.500",
+            precio: "28.990.000",
+            image: "/images/featured/jaguar.webp",
+            url: "https://auto.mercadolibre.cl/MLC-2829762764-jaguar-xf-30-sc-s-_JM"
+        },
+        {
+            id: 3,
+            marca: "Toyota",
+            modelo: "Yaris",
+            ano: "2017",
+            kms: "72.000",
+            precio: "7.990.000",
+            image: "/images/featured/yaris.webp",
+            url: "https://auto.mercadolibre.cl/MLC-1564659859-toyota-yaris-sport-15-_JM"
+        }
+    ];
+
+    return (
         <>
-        <div className={styles.carousel}>
-        <div className={styles.carousel_track}>
-            <div className={styles.img_container} >
-                <a href=""><img src="/images/featured/1.JPG" alt="" className={styles.img_us}/></a>
-                <button className={styles.btn_details}>detalles</button>
+            <div className={styles.featured_container}>
+                <div className={styles.carousel}>
+                    <div className={styles.carousel_track}>
+                        {data.map((car) =>
+                        (<>
+                        <a href={car.url} className={styles.container_item_carruel}>
+                        <FeaturedCard key={car.id} car={car}></FeaturedCard>
+                        </a>
+                        </>)
+                        )}
+                    </div>
+                </div>
             </div>
-            <div className={styles.img_container}>
-                <a href=""><img src="/images/featured/2.JPG" alt="" className={styles.img_us}/></a>
-                <button className={styles.btn_details}>detalles</button>
-            </div>
-            <div className={styles.img_container}>
-                <a href=""><img src="/images/featured/3.JPG" alt="" className={styles.img_us}/></a>
-                <button className={styles.btn_details}>detalles</button>
-            </div>
-        </div>
-    </div>
-    </>
+
+        </>
     )
 }
 export default Featured

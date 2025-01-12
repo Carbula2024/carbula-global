@@ -281,6 +281,10 @@
     filter: invert(80%) sepia(100%) saturate(1000%) hue-rotate(90deg) brightness(1) contrast(1);
   }
 
+  .icon_insta{
+    filter: invert(20%) sepia(100%) saturate(5000%) hue-rotate(-50deg) brightness(1) contrast(1);
+  }
+
 
   .icon_disp_none{
     display: none;

@@ -125,6 +125,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -100px;
+    margin-bottom: 256px;
   }
 
   .title {
@@ -147,6 +148,7 @@
 @media (max-width: 915px) {
 
   .jumbotron__container {
+    margin-bottom: 53px;
     padding: 67px 0px;
     background-position-y: 0px;
     height: 211px;
@@ -212,6 +214,12 @@
 }
 
 @media (max-width: 769px) {
+  .jumbotron__container{
+    margin-bottom: 250px;
+  }
+}
+
+@media (max-width: 769px) {
   .text__container{
     margin: 0px;
     margin-top: 125px;
@@ -226,6 +234,19 @@
   }
 }
 
+@media (max-width: 599px) {
+  .jumbotron__container{
+    margin-bottom: 100px;
+  }
+}
+
+
+@media (max-width: 429px) {
+  .jumbotron__container{
+    margin-bottom: 50px;
+  }
+}
+
 @media (max-width: 398px) {
   .text__container {
     width: 95%;
@@ -233,6 +254,10 @@
   }
   .list_jumbotron_mobile  li a{
     font-size: 13px;
+  }
+
+  .jumbotron__container{
+    margin-bottom: 35px;
   }
 
 }

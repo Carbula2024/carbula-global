@@ -55,7 +55,7 @@ const Toolbar = ({ drawerClickHandler }) => {
         </div>
       </div>
       <div className={styles.icons_nav}>
-        <a href={getInstagramLink(COUNTRY_CODE)} target="_blank" rel="noopener noreferrer" className={styles.icon_disp_none}>
+        <a href={getInstagramLink(COUNTRY_CODE)} target="_blank" rel="noopener noreferrer">
           <img src="/icons/instagram.svg" alt="Instagram" className={styles.icon_insta} />
         </a>
         <a href={`http://api.whatsapp.com/send?phone=${getWhatsappNumber(COUNTRY_CODE)}&text=Hola,%20tengo%20una%20consulta`} target="_blank" rel="noopener noreferrer">
