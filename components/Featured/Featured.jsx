@@ -10,7 +10,7 @@ const Featured = () => {
             ano: "2019",
             kms: "67.500",
             precio: "12.190.000",
-            image: "/images/featured/auris.webp",
+            image: "/images/featured/auris.jpg",
             url:"https://auto.mercadolibre.cl/MLC-1565603227-toyota-auris-lei-cvt-16-aut-2019-_JM"
         },
         {
@@ -30,7 +30,7 @@ const Featured = () => {
             ano: "2017",
             kms: "72.000",
             precio: "7.990.000",
-            image: "/images/featured/yaris.webp",
+            image: "/images/featured/yaris.jpg",
             url: "https://auto.mercadolibre.cl/MLC-1564659859-toyota-yaris-sport-15-_JM"
         }
     ];
