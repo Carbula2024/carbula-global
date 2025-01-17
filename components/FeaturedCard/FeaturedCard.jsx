@@ -11,7 +11,7 @@ const FeaturedCard = (car) =>{
         <div className={styles.text_container}>
         <span className={styles.subtitle}>{marca} {ano}</span>
         <span className={styles.title}>{modelo} {version}</span>
-        <span>{kms}kms</span>
+        <span>{kms} km</span>
         <span className={styles.price}>${precio}</span>
         </div>
     </div>
