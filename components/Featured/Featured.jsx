@@ -1,5 +1,6 @@
 import styles from './featured.module.css'
 import FeaturedCard from '../FeaturedCard/FeaturedCard';
+import { version } from 'react-dom/cjs/react-dom.production.min';
 
 const Featured = () => {
     const data = [
@@ -7,6 +8,7 @@ const Featured = () => {
             id: 1,
             marca: "Toyota",
             modelo: "Auris",
+            version: "Lei Cvt 1.6 Aut",
             ano: "2019",
             kms: "67.500",
             precio: "12.190.000",
@@ -17,6 +19,7 @@ const Featured = () => {
             id: 2,
             marca: "Jaguar",
             modelo: "XF",
+            version: "XF 3.0 Sc S",
             ano: "2018",
             kms: "29.500",
             precio: "28.990.000",
@@ -27,6 +30,7 @@ const Featured = () => {
             id: 3,
             marca: "Toyota",
             modelo: "Yaris",
+            version: "Sport 1.5",
             ano: "2017",
             kms: "72.000",
             precio: "7.990.000",

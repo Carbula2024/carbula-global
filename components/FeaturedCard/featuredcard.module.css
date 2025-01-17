@@ -1,7 +1,7 @@
 .card_container{
     width: 30%;
     max-width: 360px;
-    min-width: 260px;
+    min-width: 327px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -9,6 +9,7 @@
     border-radius: 8px; /* Bordes redondeados para suavizar el diseño */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
     transition: box-shadow 0.3s ease; /* Transición suave para el hover */
+    color: black;
 }
 
 .card_container:hover{
@@ -16,8 +17,16 @@
 }
 
 .title{
-    color:#3076f3;
+    text-transform: uppercase;
     font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+.subtitle{
+    text-transform: uppercase;
+    color: #667085;
+    font-size: 0.875;
     font-weight: 600;
 }
 
@@ -39,6 +48,12 @@
     font-weight: 500;
     gap: 3px;
     padding: 10px;
+}
+
+.price{
+    border-top: 1px solid rgb(127, 127, 127);
+    font-size: 1.875rem;
+    color: #3074f1;
 }
 
 @media (max-width: 990px) {

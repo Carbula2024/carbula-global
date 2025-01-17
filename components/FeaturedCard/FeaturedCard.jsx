@@ -1,7 +1,7 @@
 import styles from './featuredcard.module.css'
 
 const FeaturedCard = (car) =>{
-    const {image, marca, modelo, ano, kms, precio} = car.car
+    const {image, marca, modelo, ano, version, kms, precio} = car.car
     return(
     <>
     <div className={styles.card_container}>
@@ -9,11 +9,10 @@ const FeaturedCard = (car) =>{
         <img src={image} alt="image car" />
         </div>
         <div className={styles.text_container}>
-        <span className={styles.title}>{marca} {modelo}</span>
-        <span className={styles.title}>{ano}</span>
-        <span></span>
+        <span className={styles.subtitle}>{marca} {ano}</span>
+        <span className={styles.title}>{modelo} {version}</span>
         <span>{kms}kms</span>
-        <span>${precio}</span>
+        <span className={styles.price}>${precio}</span>
         </div>
     </div>
     </>
