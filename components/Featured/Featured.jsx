@@ -28,14 +28,14 @@ const Featured = () => {
         },
         {
             id: 3,
-            marca: "Toyota",
-            modelo: "Yaris",
-            version: "Sport 1.5",
-            ano: "2017",
-            kms: "72.000",
-            precio: "7.990.000",
-            image: "/images/featured/yaris.jpg",
-            url: "https://auto.mercadolibre.cl/MLC-1564659859-toyota-yaris-sport-15-_JM"
+            marca: "Ford",
+            modelo: "Edge",
+            version: "Sel Ecoboost",
+            ano: "2023",
+            kms: "21 000",
+            precio: "26.990.000",
+            image: "/images/featured/ford.webp",
+            url: "https://auto.mercadolibre.cl/MLC-1556810869-ford-edge-sel-ecoboost-_JM"
         }
     ];
 
