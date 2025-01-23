@@ -17,14 +17,14 @@ const Featured = () => {
         },
         {
             id: 2,
-            marca: "Jaguar",
-            modelo: "XF",
-            version: "XF 3.0 Sc S",
-            ano: "2018",
-            kms: "29.500",
-            precio: "28.990.000",
-            image: "/images/featured/jaguar.webp",
-            url: "https://auto.mercadolibre.cl/MLC-2829762764-jaguar-xf-30-sc-s-_JM"
+            marca: "KIA",
+            modelo: "Sportage",
+            version: "EX 2.0L",
+            ano: "2022",
+            kms: "14.897",
+            precio: "19.900.000",
+            image: "/images/featured/KIA.webp",
+            url: "https://auto.mercadolibre.cl/MLC-1541919849-kia-sportage-ex-20l-_JM"
         },
         {
             id: 3,
