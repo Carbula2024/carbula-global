@@ -6,14 +6,14 @@ const Featured = () => {
     const data = [
         {
             id: 1,
-            marca: "Toyota",
-            modelo: "Auris",
-            version: "Lei Cvt 1.6 Aut",
-            ano: "2019",
-            kms: "67.500",
+            marca: "Chevrolet",
+            modelo: "Groove",
+            version: "Premier",
+            ano: "2024",
+            kms: "7.000",
             precio: "12.190.000",
-            image: "/images/featured/auris.jpg",
-            url:"https://auto.mercadolibre.cl/MLC-1565603227-toyota-auris-lei-cvt-16-aut-2019-_JM"
+            image: "/images/featured/Groove.jpg",
+            url:"https://auto.mercadolibre.cl/MLC-1571777427-chevrolet-groove-15-premier-mt-_JM"
         },
         {
             id: 2,
