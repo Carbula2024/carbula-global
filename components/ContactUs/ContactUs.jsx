@@ -12,10 +12,10 @@ const ContactUs = () =>{
                 <p className={styles.email}><img src="/images/aboutus/email.svg" alt="email" />daniel@carbula.com</p>
             </div>
             <div className={styles.img_container}>
-                <img src="/images/aboutus/Natasha.png" alt="Miembro del equipo" className={styles.img_us} />
-                <h3>Gerente marketing</h3>
-                <p className={styles.phone}><img src="/images/aboutus/phone.svg" alt="phone" />+56935317622</p>
-                <p className={styles.email}><img src="/images/aboutus/email.svg" alt="email" />natasha@carbula.com</p>
+                <img src="/images/aboutus/esme.png" alt="Miembro del equipo" className={styles.img_us} />
+                <h3>Gerente Digital</h3>
+                <p className={styles.phone}><img src="/images/aboutus/phone.svg" alt="phone" />+56987660071</p>
+                <p className={styles.email}><img src="/images/aboutus/email.svg" alt="email" />esmeralda.sayagues@gmail.com</p>
             </div>
             <div className={styles.img_container}>
                 <img src="/images/aboutus/Marcelo.png" alt="Miembro del equipo" className={styles.img_us} />
